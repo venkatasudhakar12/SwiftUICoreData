@@ -14,6 +14,7 @@
 		9EEBB5C224826D8600FBBA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEBB5C124826D8600FBBA1A /* Assets.xcassets */; };
 		9EEBB5C524826D8600FBBA1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEBB5C424826D8600FBBA1A /* Preview Assets.xcassets */; };
 		9EEBB5C824826D8600FBBA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEBB5C624826D8600FBBA1A /* LaunchScreen.storyboard */; };
+		9EEBB5D02482757100FBBA1A /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEBB5CF2482757100FBBA1A /* TextFieldAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9EEBB5C424826D8600FBBA1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9EEBB5C724826D8600FBBA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EEBB5C924826D8600FBBA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEBB5CF2482757100FBBA1A /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				9EEBB5B824826D8500FBBA1A /* AppDelegate.swift */,
 				9EEBB5BA24826D8500FBBA1A /* SceneDelegate.swift */,
 				9EEBB5BF24826D8500FBBA1A /* ContentView.swift */,
+				9EEBB5CF2482757100FBBA1A /* TextFieldAlert.swift */,
 				9EEBB5C124826D8600FBBA1A /* Assets.xcassets */,
 				9EEBB5C624826D8600FBBA1A /* LaunchScreen.storyboard */,
 				9EEBB5C924826D8600FBBA1A /* Info.plist */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEBB5D02482757100FBBA1A /* TextFieldAlert.swift in Sources */,
 				9EEBB5B924826D8500FBBA1A /* AppDelegate.swift in Sources */,
 				9EEBB5BB24826D8500FBBA1A /* SceneDelegate.swift in Sources */,
 				9EEBB5C024826D8500FBBA1A /* ContentView.swift in Sources */,
