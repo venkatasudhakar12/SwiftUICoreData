@@ -16,47 +16,58 @@ struct ContentView: View {
     @State private var name:String = ""
     @FetchRequest(entity: Employee.entity(), sortDescriptors: []) var employees:FetchedResults<Employee>
     var body: some View {
-        NavigationView {
-            List{
-                ForEach(employees,id: \.id){ employee in
-                    Text(employee.name ?? "")
-                        .onTapGesture {
-                            withAnimation {
-                                self.selectedemployee = employee
-                                self.showUpdateAlert.toggle()
+        GeometryReader { geo in
+            NavigationView {
+                VStack(alignment:.leading){
+                    List{
+                        ForEach(self.employees,id: \.id){ employee in
+                            Text(employee.name ?? "")
+                                .onTapGesture {
+                                    withAnimation {
+                                        self.selectedemployee = employee
+                                        self.showUpdateAlert.toggle()
+                                    }
                             }
-                    }
-                }
-                .onDelete(perform: deleteEmployee(at:))
-                
-            }
-            .navigationBarTitle("Empoyees",displayMode: .inline)
-            .navigationBarItems(trailing:
-                Button(action: {
-                    //action add
-                    withAnimation {
-                        self.showAlert.toggle()
-                    }
-                    
-                }, label: {
-                    Image(systemName: "plus.square.fill")
-                        .font(.system(size: 30))
-                })
-                
-            )
-                .navigationBarItems(leading:
-                    EditButton()
-                    , trailing:  Button(action: {
-                        //action add
-                        withAnimation {
-                            self.showAlert.toggle()
                         }
+                        .onDelete(perform: self.deleteEmployee(at:))
                         
-                    }, label: {
-                        Image(systemName: "plus.square.fill")
-                            .font(.system(size: 30))
-                    })
-            )
+                    }
+                    NavigationLink(destination: ToDoListView()) {
+                        Text("Todo")
+                            .frame(width:geo.size.width ,height:40)
+                            .foregroundColor(Color.white)
+                            .background(Color.red)
+                    }
+                    .navigationBarTitle("Empoyees",displayMode: .inline)
+                    .navigationBarItems(trailing:
+                        Button(action: {
+                            //action add
+                            withAnimation {
+                                self.showAlert.toggle()
+                            }
+                            
+                        }, label: {
+                            Image(systemName: "plus.square.fill")
+                                .font(.system(size: 30))
+                        })
+                        
+                    )
+                        .navigationBarItems(leading:
+                            EditButton()
+                            , trailing:  Button(action: {
+                                //action add
+                                withAnimation {
+                                    self.showAlert.toggle()
+                                }
+                                
+                            }, label: {
+                                Image(systemName: "plus.square.fill")
+                                    .font(.system(size: 30))
+                            })
+                    )
+                }
+            }
+            
         }
         .alert(isPresented: $showAlert, TextAlert(title: "Add Employee",placeholder: "Enter name", action: {
             if let name = $0 {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E54ADCF24863C970090EF41 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54ADCE24863C970090EF41 /* ToDoListView.swift */; };
+		9E54ADD2248647310090EF41 /* ToDo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54ADD0248647310090EF41 /* ToDo+CoreDataClass.swift */; };
+		9E54ADD3248647310090EF41 /* ToDo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E54ADD1248647310090EF41 /* ToDo+CoreDataProperties.swift */; };
 		9EEBB5B924826D8500FBBA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEBB5B824826D8500FBBA1A /* AppDelegate.swift */; };
 		9EEBB5BB24826D8500FBBA1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEBB5BA24826D8500FBBA1A /* SceneDelegate.swift */; };
 		9EEBB5BE24826D8500FBBA1A /* SwiftUICoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EEBB5BC24826D8500FBBA1A /* SwiftUICoreData.xcdatamodeld */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E54ADCE24863C970090EF41 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		9E54ADD0248647310090EF41 /* ToDo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDo+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		9E54ADD1248647310090EF41 /* ToDo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		9EEBB5B524826D8500FBBA1A /* SwiftUICoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEBB5B824826D8500FBBA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EEBB5BA24826D8500FBBA1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,10 +66,13 @@
 		9EEBB5B724826D8500FBBA1A /* SwiftUICoreData */ = {
 			isa = PBXGroup;
 			children = (
+				9E54ADD0248647310090EF41 /* ToDo+CoreDataClass.swift */,
+				9E54ADD1248647310090EF41 /* ToDo+CoreDataProperties.swift */,
 				9EEBB5B824826D8500FBBA1A /* AppDelegate.swift */,
 				9EEBB5BA24826D8500FBBA1A /* SceneDelegate.swift */,
 				9EEBB5BF24826D8500FBBA1A /* ContentView.swift */,
 				9EEBB5CF2482757100FBBA1A /* TextFieldAlert.swift */,
+				9E54ADCE24863C970090EF41 /* ToDoListView.swift */,
 				9EEBB5C124826D8600FBBA1A /* Assets.xcassets */,
 				9EEBB5C624826D8600FBBA1A /* LaunchScreen.storyboard */,
 				9EEBB5C924826D8600FBBA1A /* Info.plist */,
@@ -152,10 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E54ADCF24863C970090EF41 /* ToDoListView.swift in Sources */,
+				9E54ADD3248647310090EF41 /* ToDo+CoreDataProperties.swift in Sources */,
 				9EEBB5D02482757100FBBA1A /* TextFieldAlert.swift in Sources */,
 				9EEBB5B924826D8500FBBA1A /* AppDelegate.swift in Sources */,
 				9EEBB5BB24826D8500FBBA1A /* SceneDelegate.swift in Sources */,
 				9EEBB5C024826D8500FBBA1A /* ContentView.swift in Sources */,
+				9E54ADD2248647310090EF41 /* ToDo+CoreDataClass.swift in Sources */,
 				9EEBB5BE24826D8500FBBA1A /* SwiftUICoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
